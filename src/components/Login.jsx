@@ -1,20 +1,30 @@
 import axios from "axios";
 import { useState } from "react";
+import { BASE_URL } from "../utlis/Constants";
+import { addUser } from "../utlis/userSlice";
+import { useDispatch } from "react-redux";
+import { useNavigate } from "react-router-dom";
 
 export const Login = () => {
   const [emailId, setEmailId] = useState("kangna@gmail.com");
   const [password, setPassword] = useState("Kangna@123");
-  const btnLogin = () => {
+  const dispatch = useDispatch();
+  const navigate = useNavigate();
+
+  const btnLogin = async () => {
     try {
-      axios.post(
-        "http://localhost:7777/login",
+      const res = await axios.post(
+        BASE_URL + "login",
         { emailId, password },
         { withCredentials: true },
       );
+      dispatch(addUser(res?.data?.data));
+      navigate("/");
     } catch (err) {
       console.log(err);
     }
   };
+
   return (
     <div className="flex flex-1 justify-center items-center">
       <div className="card bg-slate-200 w-96 shadow-sm">
