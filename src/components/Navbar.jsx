@@ -2,9 +2,9 @@ import React from "react";
 
 export const Navbar = () => {
   return (
-    <div class="navbar shadow-sm bg-teal-600">
+    <div class="navbar shadow-sm bg-sky-600">
       <div class="flex-1">
-        <a class="btn btn-ghost text-xl text-slate-100">Dev Tinder</a>
+        <a class="btn btn-ghost text-xl text-slate-100">GitMatch</a>
       </div>
       <div class="flex gap-2">
         <div class="dropdown dropdown-end">
