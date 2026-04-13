@@ -46,14 +46,18 @@ export const Navbar = () => {
               <li>
                 <Link to="/profile" class="justify-between">
                   Profile
-                  <span class="badge">New</span>
+                  <span class="badge bg-lime-300">New</span>
                 </Link>
               </li>
               <li>
                 <Link to="/connections" class="justify-between">
                   Connections
                 </Link>
-                <span class="badge">New</span>
+              </li>
+              <li>
+                <Link to="/requests" class="justify-between">
+                  Requests
+                </Link>
               </li>
               <li>
                 <a onClick={handleLogout}>Logout</a>
