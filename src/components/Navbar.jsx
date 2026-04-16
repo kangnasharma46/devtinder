@@ -17,7 +17,7 @@ export const Navbar = () => {
   };
 
   return (
-    <div class="navbar shadow-sm bg-sky-600">
+    <div class="navbar shadow-sm bg-sky-600 z-10">
       <div class="flex-1">
         <Link to="/" class="btn btn-ghost text-xl text-slate-100">
           GitMatch

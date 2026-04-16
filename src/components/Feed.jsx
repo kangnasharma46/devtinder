@@ -8,6 +8,7 @@ import { useDispatch, useSelector } from "react-redux";
 export const Feed = () => {
   const dispatch = useDispatch();
   const feedData = useSelector((store) => store.feed);
+
   const getFeed = async () => {
     try {
       const res = await axios.get(BASE_URL + "user/feed?limit=10&page=1", {
