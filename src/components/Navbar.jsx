@@ -60,6 +60,11 @@ export const Navbar = () => {
                 </Link>
               </li>
               <li>
+                <Link to="/premium" class="justify-between">
+                  Premium
+                </Link>
+              </li>
+              <li>
                 <a onClick={handleLogout}>Logout</a>
               </li>
             </ul>

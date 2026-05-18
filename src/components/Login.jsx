@@ -6,8 +6,8 @@ import { useDispatch } from "react-redux";
 import { useNavigate } from "react-router-dom";
 
 export const Login = () => {
-  const [emailId, setEmailId] = useState("kangna@gmail.com");
-  const [password, setPassword] = useState("Kangna@123");
+  const [emailId, setEmailId] = useState("");
+  const [password, setPassword] = useState("");
   const [firstName, setFirstName] = useState("");
   const [lastName, setLastName] = useState("");
   const [mobileNumber, setMobileNumber] = useState("");
